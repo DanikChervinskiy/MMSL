@@ -1,0 +1,151 @@
+
+/* /// END DECORATION CSS /// */
+.icon_select_mate {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 16px;
+    height: 22px;
+    transition: all 275ms;
+}
+select{
+    padding-left: 20px;
+}
+.select_mate {
+    overflow: none;
+    position: relative;
+    float: left;
+    /* min-width: 300px; */
+    min-height: 51px;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(123, 163, 223, 0.25);
+    border-radius: 8px;
+    transition: all 375ms ease-in-out;
+    /* padding-left: 20px; */
+   /* Oculto el elemento select */
+}
+.select_mate select {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    z-index: -1;
+}
+.selecionado_opcion p{
+    padding-left: 20px;
+}
+.select-item{
+    padding-left: 0;
+}
+.cont_list_select_mate {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.cont_select_int {
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    z-index: 999;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 2px 4px 8px rgba(123, 163, 223, 0.25);
+    transition: all 375ms ease-in-out;
+    font-size: 16px;
+	line-height: 1.12;
+	color: #8F8E96;
+}
+.cont_select_int li {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    
+
+    list-style-type: none;
+    padding: 10px 2%;
+    margin: 0px;
+    transition: all 275ms ease-in-out;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.cont_select_int li:last-child {
+    border-radius: 3px;
+    border-bottom: 0px;
+    
+}
+.cont_select_int li:hover {
+    background-color: #eee;
+}
+.cont_select_int .active {
+    background-color: #eee;
+    padding-left: 20px;
+}
+/* etiqueta <p> con la opcion selecionada */
+.selecionado_opcion {
+    padding-top: 18px;
+    width: 96%;
+    height: 51px;
+    display: block;
+    margin: 0px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.select-1{
+    width: 760px;
+}
+
+@media (max-width: 790px){
+	.select-1{
+		width: 625px;
+	}
+}
+
+@media (max-width: 657px){
+	.select-1{
+		width: 495px;
+	}
+}
+
+@media (max-width: 520px){
+	.select-1{
+		width: 364px;
+	}
+}
+
+@media (max-width: 400px){
+	.select-1{
+		width: 290px;
+	}
+    .select-2{
+        width: 290px;
+    }
+}
+
+.select-2{
+    width: 364px;
+}
+
+.select-3{
+    width: 232px;
+}
+
+.select-4{
+    width: 100px;
+}
+
+@media (max-width: 400px){
+    .select-2{
+        width: 290px;
+    }
+}

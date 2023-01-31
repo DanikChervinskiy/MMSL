@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#"><img src="img/Logo.svg" alt="Logo"></a>
+                </div>
+                <nav class="header__menu menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Create an Order</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">My Orders</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">View Factory Stock</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">My Customers</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Documents</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__people">
+                    <a href="" class="header__account account-header header-icon">
+                        <span class="account-header__icon">
+                            <img src="img/Account.svg" alt="Account">
+                        </span>
+                        <span class="account-header__title">Account</span>
+                    </a>
+                    <a href="" class="header__login login-header header-icon">
+                        <span class="login-header__icon">
+                            <img src="img/Log_out.svg" alt="Log out">
+                        </span>
+                        <span class="login-header__title">Log Out</span>
+                    </a>
+                </div>
+                <button class="menu__icon icon-menu" type="button">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="page__one one-page">
+                        <div class="one-page__title page-title">
+                            <h2>1. Dealer Booking Information</h2>
+                        </div>
+                        <div class="input__list">
+                            <div class="input__item">
+                                <h3>Dealer Name:</h3>
+                                <input class="input-text-1" type="text" placeholder="MMSL Akshat">
+                            </div>
+                            <div class="input__item">
+                                <h3>Sales Representative (optional):</h3>
+                                <input class="input-text-1" type="text" placeholder="MMSL Akshat">
+                            </div>
+                            <div class="input__item">
+                                <h3>Date of Booking:</h3>
+                                <input class="start-date input-text-2" type="date">
+                                <img src="img/Calendar 1.svg" alt="Calendar">
+                            </div>
+                            <div class="input__item">
+                                <h3>Expected Date of Delivery:</h3>
+                                <input class="end-date input-text-2" type="date">
+                                <img src="img/Calendar 1.svg" alt="Calendar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__two two-page">
+                        <div class="two-page__title page-title">
+                            <h2>2. Customer's Detail and Measurements</h2>
+                        </div>
+                        <div class="input__list">
+                            <div class="input__item">
+                                <h3>Customer Full Name:</h3>
+                                <input class="input-text-1" type="text" placeholder="Customer Full Name">
+                            </div>
+                            <div class="input__item">
+                                <h3>Customer Email:</h3>
+                                <input class="input-text-1" type="text" placeholder="Customer Email">
+                            </div>
+                            <div class="input__item">
+                                <h3>Store ID:</h3>
+                                <input class="start-date input-text-2" type="text" placeholder="ID">
+                            </div>
+                            <div class="input__item">
+                                <h3>Customer Phone: (optional)</h3>
+                                <input class="end-date input-text-2" type="text" placeholder="Phone">
+                            </div>
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Choose Measurement Method:</h3>
+                                    <div class="select_mate select-1" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            
+                        </div>
+                    </div>
+                    <div class="page__three three-page ">
+                        <div class="three-page__title page-title">
+                            <h2>Fabric Selection and Shirt Stylings</h2>
+                        </div>
+                        <div class="input__list-2  input-border">
+                            <div class="input-flex">
+                                <div class="input-block">
+                                    <!---------------Custom Selet ----------------->
+                                <div class="input__item">
+                                    <div class="cont_heg_50"></div>
+                                    <div class="cont_select_center">
+                                        <h3>Fabric Article No 1 (required)</h3>
+                                        <div class="select_mate select-2" data-mate-select="active" >
+                                            <select name="" onchange="" onclick="return false;" id="">
+                                                <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                                <option class="select-item" value="2">Select option 1</option>
+                                                <option class="select-item" value="3" >Select option 2</option>
+                                                <option class="select-item" value="4">Select option 3</option>
+                                            </select>
+                                            <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                            <path d="M0-.75h24v24H0z" fill="none"/>
+                                            </svg></span>
+                                            <div class="cont_list_select_mate">
+                                                <ul class="cont_select_int">  </ul> 
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- ---------------------------------------- -->
+                                <!---------------Custom Selet ----------------->
+                                <div class="input__item">
+                                    <div class="cont_heg_50"></div>
+                                    <div class="cont_select_center">
+                                        <h3>QTY.</h3>
+                                        <div class="select_mate select-4" data-mate-select="active" >
+                                            <select name="" onchange="" onclick="return false;" id="">
+                                                <option class="select-item" value="1">1</option>
+                                                <option class="select-item" value="2">2</option>
+                                                <option class="select-item" value="3" >3</option>
+                                                <option class="select-item" value="4">4</option>
+                                            </select>
+                                            <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                            <path d="M0-.75h24v24H0z" fill="none"/>
+                                            </svg></span>
+                                            <div class="cont_list_select_mate">
+                                                <ul class="cont_select_int">  </ul> 
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- ---------------------------------------- -->
+                                <div class="input__item">
+                                    <h3>Fabric Description (optional)</h3>
+                                    <input class="input-text-1" type="text" placeholder="Description">
+                                </div>
+                                </div>
+                                
+                                <div class="wrapper-input input__item">
+                                    <div class="wrapper-input__list"></div>
+                                    <div class="btn__item">
+                                        <img src="img/Plus.svg" alt="Plus">
+                                    <div class="btn">Add Fabric</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="page__four four-page ">
+                        
+                        <div class="input__list">
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Select from Placket Options:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Select from back Options:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1">1</option>
+                                            <option class="select-item" value="2">2</option>
+                                            <option class="select-item" value="3" >3</option>
+                                            <option class="select-item" value="4">4</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Select Bottom Type:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Select Collar Type:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Select Pocket Style:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Sleeve Type:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Buttons style:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                        </div>
+                    </div>
+                    <div class="page__five five-page">
+                        <div class="five-page__title page-title">
+                            <h2>Other Styling Items (optional)</h2>
+                        </div>
+                        <div class="input__list-2 input-border">
+                            
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item ">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Inside button placket fabric code</h3>
+                                    <div class="select_mate select-3" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Inside collar fabric code:</h3>
+                                    <div class="select_mate select-3" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Inside buttonhole placket fabric code:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Inside cuff fabric code:</h3>
+                                    <div class="select_mate select-3" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <div class="radiobuttons">
+                                <div class="radiobuttons__item">
+                                    <input type="radio" value="1" name="nameradio">
+                                    Full White Collar
+                                </div>
+                                <div class="radiobuttons__item">
+                                    <input type="radio" value="1" name="nameradio">
+                                    Full White Cuff
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__six six-page">
+                        
+                        <div class="input__list-2 input-border">
+                            
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item ">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Buttonholes colour:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Collar Stays:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Collar height:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Buttons stitch colour:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Collar point length:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                        </div>
+                    </div>
+                    <div class="page__seven seven-page">
+                        
+                        <div class="input__list-2">
+                            <div class="input-seven-1">
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item ">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Fusing / Interlining thickness:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Neck Type:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Handkerchief:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Neapolitan Shoulders:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Handmade Quality:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item">
+                                <div class="cont_heg_50"></div>
+                                <div class="cont_select_center">
+                                    <h3>Handmade Gathers:</h3>
+                                    <div class="select_mate select-2" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                            <option class="select-item" value="2">Select option 1</option>
+                                            <option class="select-item" value="3" >Select option 2</option>
+                                            <option class="select-item" value="4">Select option 3</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            </div>
+                            <div class="input-seven-2-3">
+                                <div class="input-seven-2">
+                                    <!---------------Custom Selet ----------------->
+                                <div class="input__item">
+                                    <div class="cont_heg_50"></div>
+                                    <div class="cont_select_center">
+                                        <h3>Left Shoulders:</h3>
+                                        <div class="select_mate select-2" data-mate-select="active" >
+                                            <select name="" onchange="" onclick="return false;" id="">
+                                                <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                                <option class="select-item" value="2">Select option 1</option>
+                                                <option class="select-item" value="3" >Select option 2</option>
+                                                <option class="select-item" value="4">Select option 3</option>
+                                            </select>
+                                            <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                            <path d="M0-.75h24v24H0z" fill="none"/>
+                                            </svg></span>
+                                            <div class="cont_list_select_mate">
+                                                <ul class="cont_select_int">  </ul> 
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- ---------------------------------------- -->
+                                <!---------------Custom Selet ----------------->
+                                <div class="input__item">
+                                    <div class="cont_heg_50"></div>
+                                    <div class="cont_select_center">
+                                        <h3>Right Shoulders:</h3>
+                                        <div class="select_mate select-2" data-mate-select="active" >
+                                            <select name="" onchange="" onclick="return false;" id="">
+                                                <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                                <option class="select-item" value="2">Select option 1</option>
+                                                <option class="select-item" value="3" >Select option 2</option>
+                                                <option class="select-item" value="4">Select option 3</option>
+                                            </select>
+                                            <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                            <path d="M0-.75h24v24H0z" fill="none"/>
+                                            </svg></span>
+                                            <div class="cont_list_select_mate">
+                                                <ul class="cont_select_int">  </ul> 
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- ---------------------------------------- -->
+                                </div>
+                                <div class="input-seven-3">
+                                    <!---------------Custom Selet ----------------->
+                                <div class="input__item">
+                                    <div class="cont_heg_50"></div>
+                                    <div class="cont_select_center">
+                                        <h3>Shoulder Position:</h3>
+                                        <div class="select_mate select-2" data-mate-select="active" >
+                                            <select name="" onchange="" onclick="return false;" id="">
+                                                <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                                <option class="select-item" value="2">Select option 1</option>
+                                                <option class="select-item" value="3" >Select option 2</option>
+                                                <option class="select-item" value="4">Select option 3</option>
+                                            </select>
+                                            <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                            <path d="M0-.75h24v24H0z" fill="none"/>
+                                            </svg></span>
+                                            <div class="cont_list_select_mate">
+                                                <ul class="cont_select_int">  </ul> 
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- ---------------------------------------- -->
+                                <!---------------Custom Selet ----------------->
+                                <div class="input__item">
+                                    <div class="cont_heg_50"></div>
+                                    <div class="cont_select_center">
+                                        <h3>Sleeve Placket Button:</h3>
+                                        <div class="select_mate select-2" data-mate-select="active" >
+                                            <select name="" onchange="" onclick="return false;" id="">
+                                                <option class="select-item" value="1"  >Seleciona una Opcion </option>
+                                                <option class="select-item" value="2">Select option 1</option>
+                                                <option class="select-item" value="3" >Select option 2</option>
+                                                <option class="select-item" value="4">Select option 3</option>
+                                            </select>
+                                            <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                            <path d="M0-.75h24v24H0z" fill="none"/>
+                                            </svg></span>
+                                            <div class="cont_list_select_mate">
+                                                <ul class="cont_select_int">  </ul> 
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="page__eight eight-page otstup">
+                        <div class="one-page__title page-title">
+                            <h2>Body Posture (optional):</h2>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>Forward Chest</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_1.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>Forearm</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_2.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>Sleeve Pitch</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_3.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>X-Back</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_4.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>X-front</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_5.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>Hollow Back</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_6.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>Back Teak</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_7.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">
+                                    <h3>Short back</h3>
+                                </div>
+                                <div class="card__img">
+                                    <img src="img/Body_posture_4.png" alt="Body_posture_1">
+                                </div>
+                                <div class="card__input">
+                                    <!---------------Custom Selet ----------------->
+                                    <div class="input__item ">
+                                        <div class="cont_heg_50"></div>
+                                        <div class="cont_select_center">
+                                            <div class="select_mate select-4" data-mate-select="active" >
+                                                <select name="" onchange="" onclick="return false;" id="">
+                                                    <option class="select-item" value="1"  >1</option>
+                                                    <option class="select-item" value="2">2</option>
+                                                    <option class="select-item" value="3" >3</option>
+                                                    <option class="select-item" value="4">4</option>
+                                                </select>
+                                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                                <path d="M0-.75h24v24H0z" fill="none"/>
+                                                </svg></span>
+                                                <div class="cont_list_select_mate">
+                                                    <ul class="cont_select_int">  </ul> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- ---------------------------------------- -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__nine nine-page otstup">
+                        <div class="nine-page__title page-title">
+                            <h2>Rate and Adress</h2>
+                        </div>
+                        <div class="input__list-2 input-border">
+                            
+                            <div class="input__item">
+                                <h3>Dealer Name:</h3>
+                                <input class="input-text-5" type="text" placeholder="NOT CHOSEN">
+                            </div>
+                            <div class="input__item">
+                                <h3>Dealer Name:</h3>
+                                <input class="input-text-5" type="text" placeholder="Text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__ten ten-page">                       
+                        <div class="input__list-2">
+                            <div class="input__item">
+                                <h3>Street Name</h3>
+                                <input class="input-text-1" type="text" placeholder="Streeat Name">
+                            </div>
+                            <div class="input__item">
+                                <h3>City</h3>
+                                <input class="input-text-1" type="text" placeholder="City">
+                            </div>
+                            <div class="input__item">
+                                <h3>State</h3>
+                                <input class="input-text-1" type="text" placeholder="State">
+                            </div>
+                            <div class="input__item">
+                                <h3>Country</h3>
+                                <input class="input-text-1" type="text" placeholder="Country">
+                            </div>
+                            <div class="input__item">
+                                <h3>Zip Code</h3>
+                                <input class="input-text-1" type="text" placeholder="Zip Code">
+                            </div>
+                            <div class="input__item">
+                                <h3>Phone</h3>
+                                <input class="input-text-1" type="text" placeholder="Phone">
+                            </div>
+                            <div class="input__item">
+                                <h3>Email</h3>
+                                <input class="input-text-1" type="text" placeholder="Email">
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="page__one one-page otstup">
+                        <div class="one-page__title page-title">
+                            <h2>Additional Comments and Requirements</h2>
+                        </div>
+                        <div class="input__list-3">
+                            <!---------------Custom Selet ----------------->
+                            <div class="input__item ">
+                                <div class="cont_heg_50"></div>
+                                <h3>Priority Order</h3>
+                                <div class="cont_select_center">
+                                    <div class="select_mate select-4" data-mate-select="active" >
+                                        <select name="" onchange="" onclick="return false;" id="">
+                                            <option class="select-item" value="1"  >1</option>
+                                            <option class="select-item" value="2">2</option>
+                                            <option class="select-item" value="3" >3</option>
+                                            <option class="select-item" value="4">4</option>
+                                        </select>
+                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                        </svg></span>
+                                        <div class="cont_list_select_mate">
+                                            <ul class="cont_select_int">  </ul> 
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- ---------------------------------------- -->
+                            <div class="input__item">
+                                <h3>Additional Comments (Please write any extra requirement):</h3>
+                                <textarea class="input-textarea" name="text" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <a href="#"><img src="img/Logo_2.svg" alt="Logo"></a>
+                </div>
+                <a href="#">Copyright © 2022 MMSL. All rights reserved.</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/select.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
